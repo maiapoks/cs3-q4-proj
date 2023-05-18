@@ -1,0 +1,23 @@
+Glossary?:
+1. **performHotelSearch**: This function is responsible for performing the hotel search based on the user's input. It takes the destination, check-in date, and check-out date as parameters. Inside the function, it filters the hotels from the `database` array based on the destination, sorts them by price in ascending order, and then dynamically generates the HTML elements to display the search results.
+
+2. **searchForm**: ID of the search form element (`<form id="searchForm">`). This form allows users to input their destination, check-in date, and check-out date for the hotel search.
+
+3. **destination**: ID of the destination input field (`<input type="text" id="destination" required>`). Users can enter the destination they want to search for hotels in.
+
+4. **checkIn**: ID of the check-in date input field (`<input type="date" id="checkIn" required>`). Users can select the date they plan to check in to the hotel.
+
+5. **checkOut**: ID of the check-out date input field (`<input type="date" id="checkOut" required>`). Users can select the date they plan to check out from the hotel.
+
+6. **results**: ID of the results container (`<div id="results">`). This is the container where the dynamically generated hotel search results will be displayed.
+
+7. **hotel**: Class name for each hotel element (`<div class="hotel">`) generated dynamically in the search results. It represents an individual hotel's information.
+
+8. **hotel-info**: Class name for the div element that contains the hotel's information (`<div class="hotel-info">`) such as name, location, price, and rating.
+
+9. **dropdown-btn**: Class name for the button element that toggles the dropdown content (`<button class="dropdown-btn">`). It allows users to show or hide the details of a hotel.
+
+10. **dropdown-content**: Class name for the div element that contains the dropdown content (`<div class="dropdown-content">`). It displays additional information about the hotel when the dropdown button is clicked.
+
+11. **background-transition**: Class name for the div element (`<div class="background-transition">`) that creates a transition effect for the background images. It fades the background image in and out at regular intervals.
+//didnt implement yet bc most links are dummy links bc i got lazy

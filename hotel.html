@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hotel Booking App</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1>Hotel Booking App</h1>
+
+    <form id="searchForm">
+        <label for="destination">Destination:</label>
+        <input type="text" id="destination" required>
+
+        <label for="checkIn">Check-in Date:</label>
+        <input type="date" id="checkIn" required>
+
+        <label for="checkOut">Check-out Date:</label>
+        <input type="date" id="checkOut" required>
+
+        <button type="submit">Search</button>
+    </form>
+
+    <div id="results"></div>
+    <div class="background-transition"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
