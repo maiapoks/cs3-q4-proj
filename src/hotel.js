@@ -17,7 +17,7 @@ function performHotelSearch(destination, checkIn, checkOut) {
             rating: 4.2,
             description: 'A beautiful beachfront resort located in the heart of Boracay.',
             image: 'https://example.com/boracay-beach-resort.jpg',
-            url: 'https://example.com/boracay-beach-resort'
+            url: 'htdocs/booking.html'
         },
         {
             name: 'Nigi Nigi Too',
@@ -26,7 +26,7 @@ function performHotelSearch(destination, checkIn, checkOut) {
             rating: 4.2,
             description: 'A cozy beachfront hotel offering comfortable accommodations and stunning views.',
             image: 'https://example.com/nigi-nigi-too.jpg',
-            url: 'https://example.com/nigi-nigi-too'
+            url: 'htdocs/booking.html'
         },
         {
             name: 'Alta Vista de Boracay',
@@ -35,7 +35,7 @@ function performHotelSearch(destination, checkIn, checkOut) {
             rating: 4.0,
             description: 'Experience luxury and relaxation at this hilltop resort in Boracay.',
             image: 'https://example.com/alta-vista-de-boracay.jpg',
-            url: 'https://example.com/alta-vista-de-boracay'
+            url: 'htdocs/booking.html'
         },
         {
             name: 'Chill-Out Hostel Boracay',
@@ -44,7 +44,7 @@ function performHotelSearch(destination, checkIn, checkOut) {
             rating: 4.2,
             description: 'A budget-friendly hostel located just a few steps from the beach.',
             image: 'https://example.com/chill-out-hostel.jpg',
-            url: 'https://example.com/chill-out-hostel'
+            url: 'htdocs/booking.html'
         },
         {
             name: 'El Nido Cliffside Cottages',
@@ -53,7 +53,7 @@ function performHotelSearch(destination, checkIn, checkOut) {
             rating: 4.0,
             description: 'Stay in charming cottages overlooking the breathtaking cliffs of El Nido.',
             image: 'https://example.com/el-nido-cliffside-cottages.jpg',
-            url: 'https://example.com/el-nido-cliffside-cottages'
+            url: 'htdocs/booking.html'
         },
         {
             name: "Zhaya's Beach and Cottages",
@@ -62,7 +62,7 @@ function performHotelSearch(destination, checkIn, checkOut) {
             rating: 4.6,
             description: 'Relax and unwind in beachfront cottages surrounded by tropical paradise.',
             image: 'https://example.com/zhayas-beach-and-cottages.jpg',
-            url: 'https://example.com/zhayas-beach-and-cottages'
+            url: 'htdocs/booking.html'
         },
     ];
 
@@ -113,7 +113,7 @@ function performHotelSearch(destination, checkIn, checkOut) {
     var dropdownBtns = document.getElementsByClassName('dropdown-btn');
     for (var i = 0; i < dropdownBtns.length; i++) {
         dropdownBtns[i].addEventListener('mouseenter', function () {
-            this.innerText = 'Book a Flight';
+            this.innerText = 'Book a Room';
         });
 
         dropdownBtns[i].addEventListener('mouseleave', function () {

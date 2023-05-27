@@ -1,72 +1,38 @@
 body {
-    background-image: url(../img/app_background.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    max-width: 100%;
-}
-
-#text {
-    margin-bottom: 15px;
-    padding: 5px;
-    background-color: #2D4A57;
-    color: white;
-    text-align: center;
-    font-family: Garamond;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
 }
 
 h1 {
-    font-size: xx-large;
-
-}
-
-h3 {
-    font-size: large;
-}
-
-#logo {
-    float: left;
-    padding-top: 17px;
-    padding-left: 70px;
-    position: absolute;
+    margin-bottom: 20px;
 }
 
 form {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
     margin-bottom: 20px;
-    margin-top: 20px;
-    font-family: "Trebuchet MS";
-    font-weight: bold;
-    margin-left: 17px;
-}
-
-legend {
-    background-color: #EFCAA8;
-    font-family: Garamond;
-    font-size: x-large;
-}
-
-fieldset {
-    background-color: #EFCAA8;
 }
 
 label {
+    display: block;
     margin-right: 10px;
     margin-bottom: 10px;
-}
-
-input {
-    font-family: "Trebuchet MS";
+    font-weight: bold;
+    text-align: right;
+    width: 130px;
 }
 
 input[type="text"],
 input[type="date"],
-input[type="email"],
-input[type="submit"],
-input[type="reset"] {
+button[type="submit"] {
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 5px;
@@ -75,29 +41,18 @@ input[type="reset"] {
 }
 
 input[type="text"],
-input[type="date"],
-input[type="email"] {
+input[type="date"] {
     width: 200px;
 }
 
-input[type="submit"] {
+button[type="submit"] {
     background-color: #007bff;
     color: white;
     cursor: pointer;
 }
 
-input[type="submit"]:hover {
+button[type="submit"]:hover {
     background-color: #0062cc;
-}
-
-input[type="reset"] {
-    background-color: #e43434;
-    color: white;
-    cursor: pointer;
-}
-
-input[type="reset"]:hover {
-    background-color: #f8633a;
 }
 
 #results {
@@ -107,7 +62,7 @@ input[type="reset"]:hover {
     align-items: flex-start;
 }
 
-#results div {
+.hotel-info {
     width: 300px;
     margin: 10px;
     padding: 20px;

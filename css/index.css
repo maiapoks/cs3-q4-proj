@@ -1,0 +1,205 @@
+body {
+    background-image: url(../img/app_background.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    max-width: 100%;
+}
+
+#text {
+    margin-bottom: 15px;
+    padding: 5px;
+    background-color: #2D4A57;
+    color: white;
+    text-align: center;
+    font-family: Garamond;
+}
+
+h1 {
+    font-size: xx-large;
+
+}
+
+h3 {
+    font-size: large;
+}
+
+#logo {
+    float: left;
+    padding-top: 17px;
+    padding-left: 70px;
+    position: absolute;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    font-family: "Trebuchet MS";
+    font-weight: bold;
+    margin-left: 17px;
+}
+
+legend {
+    background-color: #EFCAA8;
+    font-family: Garamond;
+    font-size: x-large;
+}
+
+fieldset {
+    background-color: #EFCAA8;
+}
+
+label {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+input {
+    font-family: "Trebuchet MS";
+}
+
+input[type="text"],
+input[type="date"],
+input[type="email"],
+input[type="submit"],
+input[type="reset"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+input[type="text"],
+input[type="date"],
+input[type="email"] {
+    width: 200px;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0062cc;
+}
+
+input[type="reset"] {
+    background-color: #e43434;
+    color: white;
+    cursor: pointer;
+}
+
+input[type="reset"]:hover {
+    background-color: #f8633a;
+}
+
+select,
+option {
+    font-family: "Trebuchet MS";
+}
+
+#results {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#results div {
+    width: 300px;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+    background-color: #f7f7f7;
+}
+
+#results h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+#results p {
+    margin: 0;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+#results p:last-child {
+    margin-bottom: 0;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-btn {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dropdown-btn:hover {
+    background-color: #0062cc;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    width: 300px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+    background-color: #f7f7f7;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.dropdown-content p {
+    margin: 0;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.background-transition {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    transition: opacity 0.3s;
+    pointer-events: none;
+}
+
+.background-transition.active {
+    opacity: 1;
+    pointer-events: auto;
+}
