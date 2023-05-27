@@ -32,7 +32,7 @@ h3 {
     position: absolute;
 }
 
-article{
+article {
     display: flex;
     flex-direction: column;
     justify-content: center;

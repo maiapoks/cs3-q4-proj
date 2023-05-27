@@ -33,6 +33,15 @@ h3 {
     position: absolute;
 }
 
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
 form {
     display: flex;
     align-items: center;
@@ -40,7 +49,6 @@ form {
     margin-top: 40px;
     font-family: "Trebuchet MS";
     font-weight: bold;
-    margin-left: 17px;
 }
 
 legend {
