@@ -61,8 +61,7 @@ button[type="submit"]:hover {
     justify-content: center;
     align-items: flex-start;
 }
-
-#results div {
+.hotel-info {
     width: 300px;
     margin: 10px;
     padding: 20px;
