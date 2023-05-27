@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hotel Booking App</title>
-    <link rel="stylesheet" type="text/css" href="../cs3-q4-proj/css/index.css">
+    <title>PAPA Hotel Booking</title>
+    <link rel="stylesheet" type="text/css" href="../cs3-q4-proj/css/signin.css">
     <link rel="icon" type="image/png" sizes="32x32" href="../cs3-q4-proj/img/app_favicon.png">
 </head>
 
@@ -22,54 +22,24 @@
             </div>
         </div>
     </header>
+
     <section>
         <article>
-            <div id="wrapper">
-                <form id="booking" onreset="clearForm()" onsubmit="return displayInput();">
-                    <fieldset form="booking">
-                        <legend>BOOK A ROOM</legend>
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="input" required><br /><br />
+            <h1 id="signIn">Sign In</h1>
+            <form id="signInForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
 
-                        <label for="emailAddress">Email:</label>
-                        <input type="email" id="emailAddress" name="input" required><br /></br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
 
-                        <label for="checkIn">Check-in Date:</label>
-                        <input type="date" id="checkIn" name="input" required>
+                <input type="hidden" id="checkIn" value="">
+                <input type="hidden" id="checkOut" value="">
 
-                        <label for="checkOut">Check-out Date:</label>
-                        <input type="date" id="checkOut" name="input" required><br /><br />
+                <button type="submit">Submit</button>
+            </form>
 
-                        <label for="roomType">Room Type</label></br>
-                        <input type="radio" id="single" name="roomType" value="Single">
-                        <label for="single">Single (1 pax)</label></br>
-                        <input type="radio" id="double" name="roomType" value="Double">
-                        <label for="double">Double (2 pax)</label></br>
-                        <input type="radio" id="fam" name="roomType" value="Family">
-                        <label for="fam">Family (3-4 pax)</label><br />
-                        <input type="radio" id="suite" name="roomType" value="Suite">
-                        <label for="suite">Suite (5-6 pax)</label><br /><br />
-
-                        <label for="hotelName">Hotel Name: </label>
-                        <select name="hname" id="hname">
-                            <option value="1">Boracay Beach Resort</option>
-                            <option value="2">Nigi Nigi Too</option>
-                            <option value="3">Alta Vista de Boracay</option>
-                            <option value="4">Chill-Out Hostel Boracay</option>
-                            <option value="5">El Nido Cliffside Cottages</option>
-                            <option value="6">Zhaya's Beach and Cottages</option>
-                        </select>
-                        <br /><br />
-
-                        <input type="submit" value="Submit">
-                        <input type="reset" value="Clear">
-                    </fieldset>
-                </form>
-            </div>
-
-            <div id="display"></div>
-
-            <script src="../cs3-q4-proj/src/index.js"></script>
+            <script src="../cs3-q4-proj/src/signin.js"></script>
         </article>
     </section>
 </body>
