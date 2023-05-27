@@ -2,7 +2,7 @@ let display = document.getElementById("summary");
 
 // displays booking summary upon clicking submit
 function bookingSummary() {
-	let name, email, checkIn, checkOut, roomType, hotelName;
+	let name, email, checkIn, checkOut, roomType, hotelName, roomLevel;
 
 	name = document.getElementById("name").value;
 	email = document.getElementById("emailAddress").value;
@@ -16,6 +16,7 @@ function bookingSummary() {
 	for (var i = 0; i < roomType.length; i++) {
 		if (roomType[i].checked) {
 			roomType = roomType[i].value;
+			roomLevel = i;	// the higher the room level --> higher subtotal
 			break;
 		}
 	}
@@ -28,7 +29,7 @@ function bookingSummary() {
 	console.log("date1: " + date1 + " " + "date2: " + date2);
   
   // determines the no. of nights at the hotel
-	durationOfStay = Math.floor((date2 - date1) / (1000 * 60 * 60 * 24));
+	durationOfStay = Math.floor((date2 - date1) / (1000 * 60 * 60 * 24));	// converts unit from milliseconds to days
 	
 	console.log(durationOfStay);
 
@@ -39,32 +40,32 @@ function bookingSummary() {
 		
 		case "1":
 		hotelName = "Boracay Beach Resort";
-		price = 1336 * durationOfStay;
+		price = 1336 * (durationOfStay + roomLevel);
 		break;
 
 		case "2":
 		hotelName = "Nigi Nigi Too";
-		price = 3051 * durationOfStay;
+		price = 3051 * (durationOfStay + roomLevel);
 		break;
 
 		case "3":
 		hotelName = "Alta Vista de Boracay";
-		price = 2407 * durationOfStay;
+		price = 2407 * (durationOfStay + roomLevel);
 		break;
 
 		case "4":
 		hotelName = "Chill-Out Hostel Boracay";
-		price = 1323 * durationOfStay;
+		price = 1323 * (durationOfStay + roomLevel);
 		break;
 
 		case "5":
 		hotelName = "El Nido Cliffside Cottages";
-		price = 897 * durationOfStay;
+		price = 897 * (durationOfStay + roomLevel);
 		break;
 
 		case "6":
 		hotelName = "Zhaya's Beach and Cottages";
-		price = 1350 * durationOfStay;
+		price = 1350 * (durationOfStay + roomLevel);
 		break;
 	}
 
