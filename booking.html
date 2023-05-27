@@ -1,19 +1,56 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Booking</title>
+	<title>Booking</title>
   </head>
   <body>
-    <!--Booking Details-->
-    <!--
-        Name:         
+	<header>
+		<h1>Hotel Booking</h1>
+	<header>
 
-        Check in:
-        Check out:
+	<div id="wrapper">
+	<form id="booking" onreset="clearForm()" onsubmit="return displayInput();">
+		<fieldset form="booking">
+			<legend>BOOK A ROOM</legend>
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="input" required><br/><br/>
 
-        Room type:
-    -->
-    <!--Booking Summary-->
-    <!--Ticket-->
+			<label for="emailAddress">Email:</label>
+			<input type="email" id="emailAddress" name="input" required><br/></br>
+			
+			<label for="checkIn">Check-in Date:</label>
+			<input type="date" id="checkIn" name="input" required>
+
+			<label for="checkOut">Check-out Date:</label>
+			<input type="date" id="checkOut" name="input" required><br/><br/>
+			
+			<label for="roomType">Room Type</label></br>
+			<input type="radio" id="single" name="roomType" value="Single">
+			<label for="single">Single (1 pax)</label></br>
+			<input type="radio" id="double" name="roomType" value="Double">
+			<label for="double">Double (2 pax)</label></br>
+			<input type="radio" id="fam" name="roomType" value="Family">
+			<label for="fam">Family (3-4 pax)</label><br/>
+			<input type="radio" id="suite" name="roomType" value="Suite">
+			<label for="suite">Suite (5-6 pax)</label><br/><br/>
+
+			<label for="hotelName">Hotel Name: </label>
+			<select name="hname" id="hname">
+				<option value="1">Boracay Beach Resort</option>
+				<option value="2">Nigi Nigi Too</option>
+				<option value="3">Alta Vista de Boracay</option>
+				<option value="4">Chill-Out Hostel Boracay</option>
+				<option value="5">El Nido Cliffside Cottages</option>
+				<option value="6">Zhaya's Beach and Cottages</option>
+			</select>
+			<br/><br/>
+
+			<input type="submit" value="Submit">
+			<input type="reset" value="Clear">
+		</fieldset>
+	</form>
+	</div>
+
+	<div id="display"></div>
   </body>
 </html>
