@@ -1,5 +1,5 @@
 About online app?:
-
+Don't know where to stay during your vacation? Do not fear 'cause PAPA is here! Book yourself a nice hotel to stay in during your highly anticipated vacation! PAPA will provide you with a wide range of hotels at your destination — lots of options! So, what are you waiting for? Book yourself a hotel using PAPA Hotel Booking App now!
 
 Glossary?:
 1. **performHotelSearch**: This function is responsible for performing the hotel search based on the user's input. It takes the destination, check-in date, and check-out date as parameters. Inside the function, it filters the hotels from the `database` array based on the destination, sorts them by price in ascending order, and then dynamically generates the HTML elements to display the search results.
