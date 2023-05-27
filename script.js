@@ -113,7 +113,7 @@ function performHotelSearch(destination, checkIn, checkOut) {
     var dropdownBtns = document.getElementsByClassName('dropdown-btn');
     for (var i = 0; i < dropdownBtns.length; i++) {
         dropdownBtns[i].addEventListener('mouseenter', function() {
-            this.innerText = 'Book a Flight';
+            this.innerText = 'Book a Room';
         });
 
         dropdownBtns[i].addEventListener('mouseleave', function() {
